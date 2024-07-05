@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+}
+
+main{
+  background-color: hsl(222, 26%, 31%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.main-container{
+  width: 400px;
+  height: 500px;
+}
+.top-section{
+  height: 90px;
+  width: 100%;
+}
+.top-section input{
+  height: 90px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  padding: 10px;
+  font-size: 25px;
+  outline: none;
+}
+
+.bottom-section{
+  margin-top: 20px;
+  height: 330px;
+  width: 100%;
+  border-radius: 10px;
+  background-color:hsl(223, 31%, 20%);
+  border: none;
+  padding: 20px;
+}
+
+.bottom-section-toggle{
+  background-color: hsl(281, 89%, 26%)
+}
+.top-section-toggle{
+  background-color: hsl(281, 89%, 26%);
+}
+.all{
+  margin-left: 10px;
+  margin-top: 6px;
+} 
+.button-sections{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.reset{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.button-sections div{
+  color: rgb(88, 88, 88);
+  background-color: rgb(195, 191, 191);
+  height: 40px;
+  width: 60px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 13px 0;
+  color: hsl(221, 14%, 31%);
+  cursor: pointer;
+
+}
+
+.num17{
+  background-color: hsl(225, 21%, 49%) ;
+  color: white;
+    width: 158px;
+  gap: 10px;
+  border-radius: 10px;
+  text-align: center;
+  height:40px ;
+  padding: 12px 0;
+  cursor: pointer;
+}
+.num17:hover{
+  background-color: hsl(225, 57%, 38%) ;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.num18{
+  height:40px ;
+  background-color: rgb(173, 25, 25);
+  width: 158px;
+  gap: 10px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 12px 0;
+  cursor: pointer;
+}
+.num18:hover{
+  background-color: rgb(255, 0, 0) ;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.button-sections .num4{
+  background-color: hsl(225, 21%, 49%) ;
+  color: white;
+}
+.button-sections .num4:hover{
+  background-color: hsl(225, 57%, 38%) ;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-sections div:hover { 
+  color: black;
+  background-color: rgb(123, 121, 121);
+  transition: all 0.3s ease-in-out;
+}
+/* To hide the checkbox */
+.calc{
+  color: white;
+  font-size: 30px;
+}
+
+.roger{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#checkboxInput {
+  display: none;
+}
+
+.toggleSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50px;
+  height: 30px;
+  background-color: rgb(82, 82, 82);
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: .2s;
+}
+
+.toggleSwitch::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  left: 5px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition-duration: .2s;
+  box-shadow: 5px 2px 7px rgba(8, 8, 8, 0.26);
+  border: 5px solid white;
+}
+
+#checkboxInput:checked+.toggleSwitch::after {
+  transform: translateX(100%);
+  transition-duration: .2s;
+  background-color: white;
+}
+/* Switch background change */
+#checkboxInput:checked+.toggleSwitch {
+  background-color: rgb(148, 118, 255);
+  transition-duration: .2s;
+}
+.main-background {
+ background-color: hsl(268, 75%, 9%); 
+}
